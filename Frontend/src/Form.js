@@ -5,10 +5,10 @@ import "./Form.css";
 const Form = () => {
   const [formValues, setFormValues] = useState({
     potassium: "",
-    phValue: "",
-    acidity: "",
+    pH_Value: "",
+
     temperature: "",
-    nitrogen: "",
+    NO3_N: "",
     phosphorus: "",
   });
 
@@ -41,18 +41,8 @@ const Form = () => {
           pH Value:
           <input
             type="number"
-            name="phValue"
-            value={formValues.phValue}
-            onChange={handleChange}
-          />
-        </label>
-
-        <label>
-          Acidity:
-          <input
-            type="number"
-            name="acidity"
-            value={formValues.acidity}
+            name="pH_Value"
+            value={formValues.pH_Value}
             onChange={handleChange}
           />
         </label>
@@ -68,11 +58,11 @@ const Form = () => {
         </label>
 
         <label>
-          Nitrogen:
+          NO3_N:
           <input
             type="number"
-            name="nitrogen"
-            value={formValues.nitrogen}
+            name="NO3_N"
+            value={formValues.NO3_N}
             onChange={handleChange}
           />
         </label>
