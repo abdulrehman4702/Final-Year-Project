@@ -1,0 +1,38 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+.heading{
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  text-align: center;
+  color: yellow;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  margin-top: 0px;
+}
+
+main {
+  padding: 1em;
+  margin-top: 60px; /* Adjust margin-top to account for the fixed header */
+}
+
+footer {
+  background-color: rgba(50, 104, 43, 0.801);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}

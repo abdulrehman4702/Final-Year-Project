@@ -1,0 +1,20 @@
+/* src/TransparentBox.css */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  .transparent-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+  }
+  

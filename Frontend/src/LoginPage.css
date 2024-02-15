@@ -1,0 +1,87 @@
+/* LoginPage.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('login.jpg'); 
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Ensure the background covers the entire viewport height */
+}
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.877); /* Optional: Add a semi-transparent background to the container */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.login-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.login-label-2{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.login-input-2 {
+  width: calc(107% - 20px);
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: block;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.login-input {
+  width: calc(107% - 20px);
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: block;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+button {
+  background-color: #638642;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4f6b3a;
+}
+h2{
+  text-align: center;
+}
+.maps{
+  background-color: #638642;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-left: 150px;
+}
