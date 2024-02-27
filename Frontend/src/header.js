@@ -11,13 +11,11 @@ import "./SignupButton.css";
 function Header() {
   return (
     <>
-      {" "}
       <h1 className="heading">Computer Vision Based Agriculture System</h1>
       <ImageSlider /> {/* Include the ImageSlider component here */}
       <Footer />
       <div className="justify">
-        <Link to="/LoginPage">
-          {" "}
+          <Link to="/LoginPage">
           {/* Link to the /login route */}
           <button className="Loginbutton">Login</button>
         </Link>

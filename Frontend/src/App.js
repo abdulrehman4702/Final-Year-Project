@@ -18,7 +18,6 @@ function App() {
         <Route path="/imageslider" element={<ImageSlider />} />
         <Route path="/LoginPage" element={<LoginPage />} />
         <Route path="/SignupPage" element={<SignupPage />} />
-        <Route path="/google-map" component={<GoogleMapPage />} />
       </Routes>
     </BrowserRouter>
   );
