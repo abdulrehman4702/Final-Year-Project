@@ -2,7 +2,7 @@
 import "./LoginPage.css"; // Import your CSS file
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { loginCustomer } from "./services/client";
+// import { loginCustomer } from "./services/client";
 
 const LoginPage = () => {
   var customer = {
