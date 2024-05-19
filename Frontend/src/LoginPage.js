@@ -1,23 +1,29 @@
 // LoginPage.js
 import "./LoginPage.css"; // Import your CSS file
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // import { loginCustomer } from "./services/client";
-
 const LoginPage = () => {
-  var customer = {
-    username:"",
-    password:""
-  }
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
-    const loginLogic=async(customer)=>{
-      try {
-        const response = await loginCustomer(customer);
-      } catch (error) {
-        console.log("Error logging in!")
-      }
-    };
-  
+  // const loginLogic=async(customer)=>{
+  //   try {
+  //     const response = await loginCustomer(customer);
+  //   } catch (error) {
+  //     console.log("Error logging in!")
+  //   }
+  // };
+
+  // Handle input changes
+  const handleUsernameChange = (e) => {
+    setUsername(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
   return (
     <div className="login-container">
       <h2>Login Page</h2>
@@ -29,8 +35,8 @@ const LoginPage = () => {
           className="login-input"
           type="text"
           id="username"
-          
-          onChange={(e) => e.target.value}
+          value={username}
+          onChange={handleUsernameChange}
         />
       </div>
       <div className="form-group">
@@ -41,15 +47,19 @@ const LoginPage = () => {
           className="login-input-2"
           type="password"
           id="password"
-          onChange={(e) => e.target.value}
+          value={password}
+          onChange={handlePasswordChange}
         />
       </div>
       <Link to="/form">
-        <button onClick={loginCustomer(customer)}>Login</button>
+        <button>Login</button> {/*  onClick={loginCustomer(customer)} */}
       </Link>
-      <a href="https://www.google.com/maps/@33.7029007,72.8397314,15z?entry=ttu">
+      <p>
+        If you do not have an account, <Link to="/SignupPage">click here</Link>!
+      </p>
+      {/* <a href="https://www.google.com/maps/@33.7029007,72.8397314,15z?entry=ttu">
         <button className="maps">Open Google Map</button>
-      </a>
+      </a> */}
     </div>
   );
 };

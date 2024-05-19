@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LoginPage from "./LoginPage";
 import SignupPage from "./SignupPage";
 import Form from "./Form";
-import GoogleMapPage from "./GoogleMapPage";
+import UploadImagePage from "./UploadImagePage.js";
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +18,7 @@ function App() {
         <Route path="/imageslider" element={<ImageSlider />} />
         <Route path="/LoginPage" element={<LoginPage />} />
         <Route path="/SignupPage" element={<SignupPage />} />
+        <Route path="/Upload" element={<UploadImagePage />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,11 +1,8 @@
 /* SignupPage.css */
 
-body {
-  overflow-y: auto; /* Add scroll for vertical overflow */
-}
-
 .signup-container {
-  max-width: 400px;
+ 
+  width: 400px;
   margin: 50px auto;
   padding: 20px;
   border: 2px solid #4caf50;
@@ -13,7 +10,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   background-color: rgba(255, 255, 255, 0.8); /* White background with low opacity */
-  margin-top: 15px;
+  margin-top: 2px;
 }
 
 .password-criteria {
@@ -42,14 +39,14 @@ label {
 }
 
 .signup-input {
-  width: calc(140% - 20px); /* Adjust width to allow for padding and borders */
+  width: calc(100% - -100px); /* Adjust width to allow for padding and borders */
   padding: 10px;
   box-sizing: border-box;
   border: 1px solid #ccc; /* Add border to input fields */
   border-radius: 5px;
   margin-top: 5px; /* Optional: Add top margin for spacing */
   display: block;
-  margin: auto; /* Center the input fields */
+  margin: 2px; /* Center the input fields */
   background-color: rgba(255, 255, 255, 0.8); /* White background with 0.8 opacity */
 }
 
@@ -63,7 +60,7 @@ label {
   transition: background-color 0.3s;
   display: block;
   margin: auto; 
-  margin-left: 160px;
+  
 }
 
 .signup-button:hover {
